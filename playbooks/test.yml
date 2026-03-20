@@ -1,7 +1,0 @@
-- name: Test inventory from NetBox
-  hosts: all
-  gather_facts: false
-  tasks:
-    - name: Show inventory hostname
-      ansible.builtin.debug:
-        msg: "Host imported from NetBox: {{ inventory_hostname }}"
