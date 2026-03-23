@@ -8,3 +8,5 @@ interfaces: false
 services: false
 
 ansible_host_dns_name: false
+compose:
+  ansible_host: primary_ip.address
