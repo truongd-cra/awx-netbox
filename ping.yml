@@ -1,7 +1,9 @@
----
-- name: Test connectivity
+- name: Install nginx
   hosts: all
-  gather_facts: no
+  become: yes
   tasks:
-    - name: Ping hosts
-      ansible.builtin.ping:
+    - name: install nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
