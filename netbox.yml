@@ -14,4 +14,4 @@ query_filters:
   - status: active
 
 compose:
-  ansible_host: primary_ip4.address
+  ansible_host: primary_ip.address
