@@ -1,6 +1,6 @@
 - name: Install nginx
   hosts: all
-  become: yes
+  become: true
   tasks:
     - name: install nginx
       apt:
